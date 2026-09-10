@@ -1,0 +1,75 @@
+/* ===================================================
+   COMPANIES - MOBILE FIRST
+=================================================== */
+
+.companies {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+.companies-container {
+    width: 100%;
+    max-width: var(--max-width-container);
+
+    text-align: center;
+}
+
+/* Título */
+.companies-title {
+    margin-bottom: 3.2rem;
+
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+/* Empresas */
+.companies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.4rem 3.2rem;
+}
+
+/* Cada empresa */
+.company-item {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    opacity: 0.9;
+}
+
+/* Imagem da empresa */
+.company-item img {
+    display: block;
+
+    width: auto;
+    height: 2.4rem;
+}
+
+/* ===================================================
+   DESKTOP
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .companies-title {
+        font-size: 3.6rem;
+    }
+
+    .companies-grid {
+        justify-content: space-between;
+        gap: 4rem;
+    }
+}

@@ -1,0 +1,156 @@
+/* ===================================================
+   DISCOVER - MOBILE FIRST
+=================================================== */
+
+.discover {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+.discover-container {
+    width: 100%;
+    max-width: var(--max-width-container);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Imagem */
+.discover-image {
+    width: 100%;
+    max-width: 28rem;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 4.8rem 0;
+}
+
+.discover-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* Pequeno título */
+.discover-tag {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+/* Título principal */
+.discover-title {
+    margin-bottom: 1.6rem;
+
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Texto roxo */
+.discover-title .purple-text {
+    color: var(--purple-400);
+}
+
+/* Texto com borda */
+.discover-title .boxed-text {
+    display: inline-block;
+
+    padding: 0 0.6rem;
+
+    border: 0.2rem solid var(--orange-700);
+}
+
+/* Descrição */
+.discover-description {
+    max-width: 48rem;
+
+    margin: 0 auto 2.4rem;
+
+    color: var(--blue-gray-300);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Link */
+.discover-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        gap 0.2s ease,
+        color 0.2s ease;
+}
+
+.discover-link:hover {
+    gap: 1.2rem;
+    color: var(--purple-400);
+}
+
+/* ===================================================
+   DESKTOP
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .discover-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 6rem;
+
+        text-align: left;
+    }
+
+    .discover-content {
+        flex: 1;
+        max-width: 60rem;
+    }
+
+    /* Imagem no lado direito */
+    .discover-image {
+        flex: 1;
+
+        max-width: 40rem;
+
+        justify-content: flex-end;
+
+        margin: 0;
+
+        order: 2;
+    }
+
+    .discover-title {
+        font-size: 4.8rem;
+    }
+
+    .discover-description {
+        margin-left: 0;
+    }
+}

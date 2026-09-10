@@ -1,0 +1,171 @@
+/* ===================================================
+   CUSTOMERS - MOBILE FIRST
+=================================================== */
+
+.customers {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+.customers-container {
+    width: 100%;
+    max-width: var(--max-width-container);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3.2rem;
+
+    text-align: center;
+}
+
+/* ===================================================
+   IMAGEM
+=================================================== */
+
+.customers-image {
+    width: 100%;
+    max-width: 28rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.customers-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* ===================================================
+   CONTEÚDO
+=================================================== */
+
+.customers-content {
+    width: 100%;
+    max-width: 54rem;
+}
+
+/* Tag */
+.customers-tag {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+/* Título */
+.customers-title {
+    margin-bottom: 1.6rem;
+
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Palavra Target */
+.customers-title .purple-text {
+    color: var(--purple-400);
+}
+
+/* Destaque rosa */
+.customers-title .pink-box .highlight {
+    display: inline-block;
+
+    padding: 0 0.4rem;
+
+    background-color: var(--rose);
+    color: var(--white);
+}
+
+/* Descrição */
+.customers-description {
+    margin: 0 auto 2.4rem;
+
+    color: var(--blue-gray-300);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Link */
+.customers-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        gap 0.2s ease,
+        color 0.2s ease;
+}
+
+.customers-link:hover {
+    gap: 1.2rem;
+    color: var(--purple-400);
+}
+
+/* ===================================================
+   DESKTOP
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .customers {
+        padding: 6rem 2rem;
+    }
+
+    .customers-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 6rem;
+
+        text-align: left;
+    }
+
+    /* Texto à esquerda */
+    .customers-content {
+        flex: 1;
+        max-width: 60rem;
+        order: 1;
+    }
+
+    /* Imagem à direita */
+    .customers-image {
+        flex: 1;
+        max-width: 38rem;
+
+        justify-content: flex-end;
+
+        order: 2;
+    }
+
+    .customers-title {
+        font-size: 4.8rem;
+    }
+
+    .customers-description {
+        margin-left: 0;
+        font-size: 1.6rem;
+    }
+}

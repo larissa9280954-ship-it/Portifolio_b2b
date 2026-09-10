@@ -1,0 +1,155 @@
+/* ===================================================
+   TOOLS - MOBILE FIRST
+=================================================== */
+
+.tools {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+.tools-container {
+    width: 100%;
+    max-width: var(--max-width-container);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3.2rem;
+
+    text-align: center;
+}
+
+/* ===================================================
+   IMAGEM
+=================================================== */
+
+.tools-image {
+    width: 100%;
+    max-width: 48rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tools-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* ===================================================
+   CONTEÚDO
+=================================================== */
+
+.tools-content {
+    width: 100%;
+    max-width: 50rem;
+}
+
+/* Tag POWERFUL */
+.tools-tag {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+/* Caixa laranja da tag */
+.tools-tag .boxed-tag {
+    display: inline-block;
+
+    padding: 0.4rem 0.8rem;
+
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    border: 0.2rem solid var(--orange-700);
+}
+
+/* Título */
+.tools-title {
+    margin-bottom: 1.6rem;
+
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Descrição */
+.tools-description {
+    margin: 0 auto;
+
+    color: var(--blue-gray-300);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ===================================================
+   DESKTOP
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .tools {
+        padding: 6rem 2rem;
+    }
+
+    /* Texto à esquerda e imagem à direita */
+    .tools-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 6rem;
+
+        text-align: left;
+    }
+
+    /* Conteúdo */
+    .tools-content {
+        flex: 1;
+        order: 1;
+
+        max-width: 48rem;
+    }
+
+    /* Imagem */
+    .tools-image {
+        flex: 1.2;
+        order: 2;
+
+        max-width: 58rem;
+
+        justify-content: flex-end;
+    }
+
+    /* Remove a caixa da tag no desktop */
+    .tools-tag .boxed-tag {
+        padding: 0;
+        border: none;
+    }
+
+    .tools-title {
+        font-size: 4.8rem;
+    }
+
+    .tools-description {
+        margin-left: 0;
+        font-size: 1.6rem;
+    }
+}

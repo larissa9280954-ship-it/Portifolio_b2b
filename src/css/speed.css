@@ -1,0 +1,133 @@
+/* ===================================================
+   SPEED - MOBILE FIRST
+=================================================== */
+
+.speed {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+.speed-container {
+    width: 100%;
+    max-width: var(--max-width-container);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3.2rem;
+
+    text-align: center;
+}
+
+/* ===================================================
+   IMAGEM
+=================================================== */
+
+.speed-image {
+    width: 100%;
+    max-width: 48rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.speed-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* ===================================================
+   CONTEÚDO
+=================================================== */
+
+.speed-content {
+    width: 100%;
+    max-width: 50rem;
+}
+
+/* Tag */
+.speed-tag {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+/* Título */
+.speed-title {
+    margin-bottom: 1.6rem;
+
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Descrição */
+.speed-description {
+    margin: 0 auto;
+
+    color: var(--blue-gray-300);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ===================================================
+   DESKTOP
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .speed {
+        padding: 6rem 2rem;
+    }
+
+    .speed-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 6rem;
+
+        text-align: left;
+    }
+
+    /* Texto à esquerda */
+    .speed-content {
+        flex: 1;
+        max-width: 48rem;
+        order: 1;
+    }
+
+    /* Imagem à direita */
+    .speed-image {
+        flex: 1.2;
+        max-width: 58rem;
+
+        justify-content: flex-end;
+
+        order: 2;
+    }
+
+    .speed-title {
+        font-size: 4.8rem;
+    }
+
+    .speed-description {
+        margin-left: 0;
+        font-size: 1.6rem;
+    }
+}
